@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+        <div class="dashboard">
+                <div class="form">
+                    
+        
+                    
+                        Enter your first number <br><input type="text" placeholder="First Number" name="number1" id="num1">
+                        Enter your second number <br> <input type="text" placeholder="Second Number" name="number2" id="num2">
+                        
+                        
+                        
+                        
+                        <button onclick="add()">Addition</button><br><br>
+                        <button onclick="multiply()">Multiplication</button><br><br>
+                        <button onclick="divide()">Division</button><br><br>
+                        <button onclick="subt()">Subtraction</button><br><br>
+
+
+                        <h1 class="answer" id="answer"></h1>
+                    
+                    
+            <script>
+                function add(){
+                    var field1=document.getElementById("num1").value;
+                    var field2=document.getElementById("num2").value;
+
+                    var result=parseFloat(field1)+parseFloat(field2);
+
+                    if(!isNaN(result))
+                    {
+                            document.getElementById("answer").innerHTML="The answer is "+result;
+                    }
+
+                }
+
+                function multiply(){
+                    var field1=document.getElementById("num1").value;
+                    var field2=document.getElementById("num2").value;
+
+                    var result=parseFloat(field1)*parseFloat(field2);
+
+                    if(!isNaN(result))
+                    {
+                            document.getElementById("answer").innerHTML="The answer is "+result;
+                    }
+                }
+
+
+                    function divide(){
+                    var field1=document.getElementById("num1").value;
+                    var field2=document.getElementById("num2").value;
+
+                    var result=parseFloat(field1)/parseFloat(field2);
+
+                    if(!isNaN(result))
+                    {
+                            document.getElementById("answer").innerHTML="The answer is "+result;
+                    }
+                }
+                    function subt()
+                    {
+                    var field1=document.getElementById("num1").value;
+                    var field2=document.getElementById("num2").value;
+
+                    var result=parseFloat(field1)-parseFloat(field2);
+
+                    if(!isNaN(result))
+                    {
+                            document.getElementById("answer").innerHTML="The answer is "+result;
+                    }
+                    }
+            </script>
+
+                </div>
+            </div>
+    
+</body>
+</html>
